@@ -1,133 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharath - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" 
-    rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18, 62);
-            padding: 0 20px;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
-        }
-        nav ul li a{
-            text-decoration: none;
-           color:white;
-
-        }
-        nav ul li a:hover{
-           
-           color:rgb(153, 153, 226);
-           font:size 1.02rem; ;
-        }
-        .left {
-            font-size: 1.5rem;
-        }
-        .firstSection {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 80px auto;
-            padding: 0 20px;
-            max-width: 1200px;
-        }
-        .leftSection {
-            font-size: 2.5rem;
-            line-height: 1.5;
-            width: 50%;
-        }
-        .leftSection span {
-            color: rgb(140, 102, 176);
-        }
-        .rightSection {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .rightSection img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-        }
-        .purple{
-            color:rgb(170,107,228);
-
-        }
-        #element{
-            color:rgb(170,107,228);
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="left">Sharath's Portfolio</div>
-
-            <div class="right">
-                <ul>
-                    <li><a href="/"> Home</li></a>
-                    <li><a href="/">About</li></a>
-                    <li><a href="/">Services</li></a>
-                    <li><a href="/">Projects</li></a>
-                    <li><a href="/">Contact Me</li></a>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, my name is <span>Sharath</span>,<br>
-                and I am a passionate.
-                <span id="element"></span>
-            </div>
-            <div class="rightSection">
-                <img src="so.png" alt="Sharath's Portfolio">
-            </div>
-        </section>
-        
-    </main>
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-    
-    var typed = new Typed('#element', {
-      strings: ['Software Developer', 'Web Developer'],
-      typeSpeed: 50,
-    });
-
-      </script>
-</body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -161,9 +31,17 @@
             display: flex;
             justify-content: center;
         }
-        nav ul li {
+        nav ul li{
             list-style: none;
-            margin: 0 15px;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+           color: rgb(153, 153, 226);
+           font-size: 1.02rem;
         }
         .left {
             font-size: 1.5rem;
@@ -181,6 +59,18 @@
             line-height: 1.5;
             width: 50%;
         }
+        .leftSection .buttons{
+            margin-top: 20px;
+        }
+        .leftSection .btn{
+            background: #151546;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            padding: 12px;
+            margin-right: 10px;
+        }
         .leftSection span {
             color: rgb(140, 102, 176);
         }
@@ -195,6 +85,31 @@
             max-width: 400px;
             height: auto;
         }
+        section {
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        h2 {
+            color: rgb(170,107,228);
+            margin-bottom: 20px;
+        }
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li, .projects ul li {
+            margin: 10px 0;
+        }
+        .contact p {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(18, 18, 62);
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -204,11 +119,11 @@
 
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html#projects">Projects</a></li>
+                    <li><a href="about.html#skills">Skills</a></li>
+                    <li><a href="about.html#contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -217,13 +132,29 @@
         <section class="firstSection">
             <div class="leftSection">
                 Hi, my name is <span>Sharath</span>,<br>
-                and I am a Web Developer.
+                and I am a passionate
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Sharath_Resume.pdf" download><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/Sharathkumartr" target="_blank"><button class="btn">GitHub</button></a>
+                </div>
             </div>
             <div class="rightSection">
-                <img src="so.png" alt="Sharath's profile picture">
+                <img src="so.png" alt="Sharath's Portfolio">
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Sharath Kumar T R. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Full-Stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 </html>
->>>>>>> 3fc04e2f193dc64745e813b08a4eee0192a076c3
